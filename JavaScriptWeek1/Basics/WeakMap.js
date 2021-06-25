@@ -1,0 +1,11 @@
+var map = new WeakMap();
+var Trainer = {first: "Shiva", last: "Ram"};
+var Trainee = {first: "kishore", last: "Kumar"};
+map.set(Trainer, "This is Trainer");
+map.set(Trainee, "This is Trainee");
+console.log("----------------------------------");
+console.log( "Trainee" +Trainee);
+console.log( "Trainer" +Trainer);
+console.log("----------------------------------");
+console.log("Getting Elements");
+console.log(map.get(Trainer));

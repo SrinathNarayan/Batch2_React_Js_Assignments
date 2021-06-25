@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="app.css">
+	<script src="app.js"></script>
+</head>
+
+<body>
+	<div class="heading">
+		<h2>Simple Calculator</h2>
+	</div>
+	<div class="container">
+		<div class="calculator s_flex">
+			<div class="screen">
+				<input type="text" class="one" id="Number1" name="Number1" placeholder="First Number"><br>
+				<input type="text" class="two" id="Number2" name="Number2" placeholder="Second Number"><br>
+			</div>
+			<div class="main">
+				<button value="7" onclick="dis('7')">7</button>
+				<button value="8" onclick="dis('8')">8</button>
+				<button value="9" onclick="dis('9')">9</button>
+				<button onclick="clr()">C</button>
+				<button value="4" onclick="dis('4')">4</button>
+				<button value="5" onclick="dis('5')">5</button>
+				<button value="6" onclick="dis('6')">6</button>
+				<button value="1" onclick="dis('1')">1</button>
+				<button value="2" onclick="dis('2')">2</button>
+				<button value="3" onclick="dis('3')">3</button>
+				<button value="0" onclick="dis('0')">0</button>
+				<button value="." onclick="dis('.')">.</button>
+
+			</div>
+		</div>
+		<div class="calculator s_grid">
+			<div class="screen">
+
+			</div>
+			<button class="button" style="vertical-align:middle" onclick="calc('add')"><span>Add </span></button>
+			<button class="button" style="vertical-align:middle" onclick="calc('sub')"><span>Sub </span></button>
+			<button class="button" style="vertical-align:middle" onclick="calc('mul')"><span>Multiply </span></button>
+			<button class="button" style="vertical-align:middle" onclick="calc('div')"><span>Divide </span></button>
+			<button class="button" style="vertical-align:middle" onclick="calc('mod')"><span>Modules </span></button>
+			<button class="button" style="vertical-align:middle" onclick="calc('cube')"><span>Cube </span></button>
+			<button class="button" style="vertical-align:middle" onclick="calc('sqr')"><span>SQR </span></button>
+			<button class="button" style="vertical-align:middle" onclick="calc('per')"><span>Per </span></button>
+			<label class="Answer">
+				<h3>Answer : <span id="answer"></span></h3>
+			</label>
+		</div>
+
+
+</body>
+
+</html>
