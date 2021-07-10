@@ -10,7 +10,12 @@ const content ={
             name:'Password',
             type:'Password'
         },
-        
+        {
+            lable:'E-mail',
+            name:'Email',
+            type:'text'
+        },
+
     ],
 };
  export default content;

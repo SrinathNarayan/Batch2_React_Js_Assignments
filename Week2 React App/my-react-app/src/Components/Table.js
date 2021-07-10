@@ -1,58 +1,68 @@
-import { useEffect,useState } from 'react'
-import './Table.css';
+import { useEffect, useState } from "react";
+import "./Table.css";
 import axios from "axios";
 const Table = () => {
-const [product,setproduct]=useState([])
-const[search,setsearch]=useState("")
-    const getdetailsdata = async () => {
-        try {
-            const data = await axios.get("http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline");
-            console.log(data.data);
-            setproduct(data.data);
-        }
-        catch (e) {
-            console.log(e);
-        }
-    };
+  const [product, setproduct] = useState([]);
+  const [search, setsearch] = useState("");
+  const getdetailsdata = async () => {
+    try {
+      const response = await axios.get("http://localhost:4000/students");
 
-    useEffect(() => {
-        getdetailsdata();
-    },[]);
+      console.log(response.data);
+      setproduct(response.data);
+    } catch (e) {
+      console.log(e);
+    }
+  };
 
-    return (
-        <div>
+  useEffect(() => {
+    getdetailsdata();
+  }, []);
 
-
-<div class="card">
-  <div class="card-header">
-      <br/>
-  <input 
-            type="text"
-            placeholder="search here"
-            onChange={e=>{
+  return (
+    <div>
+      <div className="containes">
+        <div class="card">
+          <div class="card-header">
+            <br />
+            <input
+              className="form-control"
+              type="text"
+              placeholder="search here"
+              onChange={(e) => {
                 setsearch(e.target.value);
-            }}
-                />
+              }}
+            />
+          </div>
+          <div class="card-body">
+            <h4>Json data From Child Component</h4>
+            <h5 class="card-title">List Of Trainees</h5>
 
-  </div>
-  <div class="card-body">
-      <h4>Json data From Child Component</h4>
-    <h5 class="card-title">List of products</h5>
-    
-    <p class="card-text">{product.filter(item=>{
-    if(search == " "){
-        return item
-    }
-    else if(item.name.toLowerCase().includes(search.toLowerCase())){
-        return item
-    }
-}).map(item=>{
-  return<p>{item.name}</p>  
-})}.</p>
-    
-  </div>
-</div>
+            <p class="card-text">
+              {product
+                .filter((item) => {
+                  if (search == " ") {
+                    return item;
+                  } else if (
+                    item.name.toLowerCase().includes(search.toLowerCase())
+                  ) {
+                    return item;
+                  }
+                })
+                .map((item) => {
+                  return (
+                    <>
+                      <p>Name: {item.name}</p>
+                      <i>City: {item.city}</i>
+                    </>
+                  );
+                })}
+              .
+            </p>
+          </div>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 export default Table;

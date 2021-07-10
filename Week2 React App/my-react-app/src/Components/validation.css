@@ -1,0 +1,13 @@
+.conatiners {
+  padding: 90px;
+  margin: 50px;
+  margin-left: 300px;
+  
+  
+}
+.card-body{
+    padding: auto;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}

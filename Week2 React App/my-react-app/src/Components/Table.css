@@ -1,9 +1,17 @@
-.card{
+.containes{
     margin: auto;
-    padding: auto;
+    display: flex;
+    padding: 50px;
+    margin-top: 50px;
+    width: 100%;
+    margin-left: 300px;
     
 }
 card-header{
-    margin-top: 20px;
+    margin-top: 80px;
    margin-right: 200px;
+}
+.form-control{
+    border: 2px solid black;
+    
 }

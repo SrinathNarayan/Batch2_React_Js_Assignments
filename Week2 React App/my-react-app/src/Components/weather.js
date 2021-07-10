@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import "./Weather.css";
 
 
 const Weather = () => {
@@ -20,6 +21,7 @@ const Weather = () => {
                     weatherdata: res.data.weather,
                     main: res.data.main,
                     timezone: res.data.sys
+
                 })
                 console.log(res.data.weather)
             }).catch((err) => console.error("Error" + err))
@@ -30,7 +32,8 @@ const Weather = () => {
                 <div className="alert alert-primary" role="alert">
                     Weather-Report
                 </div>
-                <div class="card">
+                <div className="weather">
+                <div className="card">
                     <div class="card-header">
                         Chennai
                     </div>
@@ -48,7 +51,7 @@ const Weather = () => {
 
                     </div>
                 </div>
-
+                </div>
 
             </div>
         </div>
