@@ -1,0 +1,83 @@
+{
+  "students": [
+    {
+      "id": "10",
+      "name": "Srinath.N",
+      "dept": "Developer",
+      "Email": "Shrinath.n@xyz.com",
+      "Password": "Abc@123"
+    },
+    {
+      "id": "9",
+      "name": "Kishore.K",
+      "dept": "Designer",
+      "Email": "Kishore.K@xyz.com",
+      "Password": "mnb@123"
+    },
+    {
+      "id": "8",
+      "name": "Lokesh.M",
+      "dept": "Designer",
+      "Email": "Lokki@xyz.com",
+      "Password": "poi@123"
+    },
+    {
+      "id": "7",
+      "name": "Ashu.R",
+      "dept": "Developer",
+      "Email": "Mota@xyz.com",
+      "Password": "mota@123"
+    },
+    {
+      "id": "6",
+      "name": "Piyush",
+      "dept": "Developer",
+      "Email": "Piyu@xyz.com",
+      "Password": "pIyu@123"
+    },
+    {
+      "id": "5",
+      "name": "Jayesh.R",
+      "dept": "Designer",
+      "Email": "jk@xyz.com",
+      "Password": "JK@123"
+    },
+    {
+      "id": "4",
+      "name": "Jatin.R",
+      "dept": "Designer",
+      "Email": "Mitn@xyz.com",
+      "Password": "Mitin@123"
+    },
+    {
+      "id": "3",
+      "name": "Viji",
+      "dept": "Developer",
+      "Email": "ViJi@xyz.com",
+      "Password": "ViJI@123"
+    },
+    {
+      "id": "2",
+      "name": "Lata",
+      "dept": "Designer",
+      "Email": "Latta@xyz.com",
+      "Password": "Latta@123"
+    },
+    {
+      "id": 0.4978677233751696,
+      "name": "lathika.N",
+      "dept": "developer",
+      "email": "",
+      "password": "123456",
+      "Email": "lathika.n99@gmail.com"
+    },
+    {
+      "id": 0.2112902217998338,
+      "name": "mota",
+      "dept": "designer",
+      "email": "",
+      "password": "147852",
+      "Email": "lkj@gmail.com"
+    }
+  ]
+}
